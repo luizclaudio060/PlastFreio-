@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PlastFreio - Início</title>
+    <title>PlastFreio - Iniciativa Contra Microplásticos</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -22,39 +22,80 @@
         </div>
     </header>
 
-    <section class="hero">
+    <!-- Banner Principal com Botões -->
+    <section class="hero" style="background: linear-gradient(rgba(100, 133, 46, 0.8), rgba(100, 133, 46, 0.8)), url('https://images.unsplash.com/photo-1618477388954-7852f32655ec?q=80&w=1200&auto=format&fit=crop'); background-position: center;">
         <h1>Freando a poluição invisível</h1>
-        <p>Explore o universo dos microplásticos: entenda a ciência por trás da contaminação e descubra como podemos agir na prevenção.</p>
+        <p>Os microplásticos estão no ar, na água e no nosso corpo. Descubra a ciência por trás dessa crise e como podemos agir na prevenção.</p>
+        
+        <!-- Botões de Ação -->
+        <div style="margin-top: 30px; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+            <a href="problema.html" class="btn">Entenda o Problema</a>
+            <a href="solucoes.html" class="btn" style="background-color: white; color: var(--primary-green);">Ver Soluções</a>
+        </div>
     </section>
 
+    <!-- Conteúdo Principal (Efeito flutuante) -->
     <main class="container">
-        <div class="article-content" style="text-align: center;">
-            <h2>Bem-vindo à PlastFreio</h2>
-            <p>Os microplásticos são um dos maiores desafios ambientais da atualidade. Nosso portal foi criado para descomplicar a ciência e mostrar que a prevenção na fonte é o único caminho viável.</p>
-            <br>
-            <p><strong>Navegue pelo menu acima ou explore as seções abaixo:</strong></p>
+        
+        <!-- Seção de Estatísticas Rápidas -->
+        <div class="stat-grid">
+            <div class="stat-card">
+                <div class="stat-number">11M</div>
+                <p>Toneladas de plástico chegam aos oceanos por ano.</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">5mm</div>
+                <p>É o tamanho máximo de uma partícula para ser considerada microplástico.</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">9%</div>
+                <p>Apenas essa porcentagem de todo o plástico do mundo é reciclado.</p>
+            </div>
         </div>
 
-        <div class="tips-grid">
-            <div class="tip-card">
-                <img src="https://images.unsplash.com/photo-1621451537084-482c73073a0f?q=80&w=600&auto=format&fit=crop" alt="Oceano" class="tip-image">
-                <div class="tip-content">
-                    <h3>A Origem do Problema</h3>
-                    <p>Descubra o que são microplásticos primários e secundários, e como eles chegam aos oceanos, ao solo e até ao nosso corpo.</p>
-                    <br>
-                    <a href="problema.html" style="color: var(--secondary-green); font-weight: bold; text-decoration: none;">Ler mais &rarr;</a>
-                </div>
-            </div>
+        <!-- Seção de Introdução -->
+        <div class="article-content" style="text-align: center; margin-bottom: 40px;">
+            <h2>Bem-vindo à PlastFreio</h2>
+            <p style="max-width: 800px; margin: 0 auto; font-size: 1.1em;">Nossa missão é descomplicar a ciência e mostrar que a prevenção na fonte é o único caminho viável para frear a crise dos microplásticos. Navegue pelo portal e descubra como você pode fazer parte dessa mudança.</p>
+        </div>
 
-            <div class="tip-card">
-                <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?q=80&w=600&auto=format&fit=crop" alt="Soluções" class="tip-image">
-                <div class="tip-content">
-                    <h3>Como agir na prática</h3>
-                    <p>Conheça atitudes individuais e mudanças sistêmicas que ajudam a frear a liberação de microplásticos no dia a dia.</p>
-                    <br>
-                    <a href="solucoes.html" style="color: var(--secondary-green); font-weight: bold; text-decoration: none;">Ver soluções &rarr;</a>
+        <!-- Navegação Visual (Cards para as outras páginas) -->
+        <h2 style="text-align: center; margin-bottom: 20px;">Explore o Portal</h2>
+        <div class="tips-grid">
+            
+            <!-- Card 1: O Problema -->
+            <a href="problema.html" style="text-decoration: none;">
+                <div class="tip-card">
+                    <img src="https://images.unsplash.com/photo-1621451537084-482c73073a0f?q=80&w=600&auto=format&fit=crop" alt="Oceano poluído" class="tip-image">
+                    <div class="tip-content">
+                        <h3>A Origem do Problema</h3>
+                        <p>Descubra o que são microplásticos primários e secundários, e como eles chegam aos oceanos e ao nosso corpo.</p>
+                    </div>
                 </div>
-            </div>
+            </a>
+
+            <!-- Card 2: Dados -->
+            <a href="dados.html" style="text-decoration: none;">
+                <div class="tip-card">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=600&auto=format&fit=crop" alt="Gráficos e dados" class="tip-image">
+                    <div class="tip-content">
+                        <h3>A Ciência em Números</h3>
+                        <p>Acesse as pesquisas mais recentes e entenda o impacto real dos microplásticos na saúde humana e no planeta.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Card 3: Soluções -->
+            <a href="solucoes.html" style="text-decoration: none;">
+                <div class="tip-card">
+                    <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?q=80&w=600&auto=format&fit=crop" alt="Reciclagem" class="tip-image">
+                    <div class="tip-content">
+                        <h3>Como Agir na Prática</h3>
+                        <p>Conheça atitudes individuais e mudanças sistêmicas que ajudam a frear a liberação de microplásticos no dia a dia.</p>
+                    </div>
+                </div>
+            </a>
+
         </div>
     </main>
 
