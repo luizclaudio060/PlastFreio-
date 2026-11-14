@@ -3,76 +3,239 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PlastFreio - Prevenção de Microplásticos</title>
+    <title>PlastFreio - Meio Ambiente e Microplásticos</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    
     <style>
+        :root {
+            --primary-dark: #0d3b5c; /* Azul escuro do menu */
+            --secondary-blue: #1a6da8; /* Azul dos links */
+            --text-dark: #333333;
+            --bg-light: #f2f4f5; /* Fundo cinza claro */
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Open Sans', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
             line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f4f9f4;
         }
-        header {
-            text-align: center;
-            padding: 40px 0;
-            background-color: #2e7d32;
-            color: white;
-            border-radius: 8px;
-            margin-bottom: 30px;
-        }
-        h1 { margin: 0; font-size: 2.5em; }
-        h2 { color: #2e7d32; border-bottom: 2px solid #a5d6a7; padding-bottom: 5px; }
-        .container {
+
+        /* --- TOPO / CABEÇALHO --- */
+        .top-header {
             background: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
         }
-        .mission-box {
-            background-color: #e8f5e9;
-            border-left: 5px solid #2e7d32;
-            padding: 15px;
-            margin: 20px 0;
-            font-style: italic;
+
+        .logo-text {
+            font-size: 1.8em;
+            font-weight: 700;
+            color: var(--primary-dark);
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
-        footer {
+
+        .logo-text span {
+            color: var(--secondary-blue);
+        }
+
+        /* --- MENU DE NAVEGAÇÃO --- */
+        .navbar {
+            background-color: var(--primary-dark);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 0 20px;
+        }
+
+        .nav-container a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 10px;
+            font-weight: 600;
+            font-size: 0.95em;
+            transition: background 0.3s;
+        }
+
+        .nav-container a:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+
+        /* --- IMAGEM DE DESTAQUE --- */
+        .hero-image {
+            width: 100%;
+            height: 350px;
+            /* Imagem genérica de fundo - você pode trocar a URL abaixo */
+            background-image: url('https://images.unsplash.com/photo-1621451537084-482c73073a0f?q=80&w=1200&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        /* Camada escura sobre a imagem para o texto aparecer melhor */
+        .hero-overlay {
+            background: rgba(13, 59, 92, 0.6); 
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-text {
             text-align: center;
-            margin-top: 40px;
-            font-size: 0.9em;
+            color: white;
+            padding: 0 20px;
+        }
+
+        .hero-text h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+        }
+
+        /* --- CONTEÚDO PRINCIPAL --- */
+        .main-content {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* Caixa branca igual a do site de exemplo */
+        .article-box {
+            background: white;
+            padding: 40px;
+            border-radius: 4px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .breadcrumb {
+            font-size: 0.85em;
             color: #666;
+            margin-bottom: 20px;
+        }
+
+        .breadcrumb a {
+            color: var(--secondary-blue);
+            text-decoration: none;
+        }
+
+        .article-box h2 {
+            font-size: 2.2em;
+            color: var(--primary-dark);
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .article-box p {
+            margin-bottom: 20px;
+            font-size: 1.05em;
+        }
+
+        .highlight-box {
+            background-color: #e9f2fa;
+            border-left: 4px solid var(--secondary-blue);
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .highlight-box strong {
+            color: var(--primary-dark);
+        }
+
+        @media (max-width: 768px) {
+            .nav-container { flex-wrap: wrap; gap: 5px; }
+            .hero-text h1 { font-size: 2em; }
+            .article-box { padding: 20px; }
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>PlastFreio</h1>
-        <p>Freando a poluição por microplásticos</p>
+    <!-- Cabeçalho Superior -->
+    <header class="top-header">
+        <div class="logo-text">
+            🌿 Plast<span>Freio</span>
+        </div>
     </header>
 
-    <div class="container">
-        <h2>Sobre Nós</h2>
-        <p>A <strong>PlastFreio</strong> é uma iniciativa brasileira dedicada a frear a formação e a dispersão de microplásticos no meio ambiente.</p>
-        <p>Nascemos da constatação de que os microplásticos — partículas menores que 5 milímetros — já estão onipresentes: no oceano, no solo, no ar e até no corpo humano. E que, uma vez dispersos, é praticamente impossível removê-los. Por isso, nossa atuação é focada na <strong>prevenção na fonte</strong>.</p>
-
-        <div class="mission-box">
-            <strong>Nossa Missão:</strong> Frear a poluição por microplásticos antes que ela se torne irreversível, promovendo informação de qualidade, educação ambiental e mudanças concretas de hábito e de política pública.
+    <!-- Menu de Navegação (Estilo Mundo Educação) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#">Início</a>
+            <a href="#">O Problema</a>
+            <a href="#">Microplásticos</a>
+            <a href="#">Soluções</a>
+            <a href="#">Notícias</a>
+            <a href="#">Contato</a>
         </div>
+    </nav>
 
-        <h2>O que fazemos</h2>
-        <ul>
-            <li><strong>Informação e conscientização:</strong> Traduzimos a ciência sobre microplásticos para linguagem acessível.</li>
-            <li><strong>Educação e mobilização:</strong> Desenvolvemos conteúdos educativos para escolas, comunidades e empresas.</li>
-            <li><strong>Articulação e boas práticas:</strong> Conectamos pesquisadores, gestores públicos e sociedade civil em torno de soluções práticas.</li>
-        </ul>
-
-        <h2>Por que "PlastFreio"?</h2>
-        <p>O nome resume nossa proposta: <strong>frear o plástico</strong> antes que ele se fragmente e se espalhe como microplástico. Não se trata de demonizar o plástico, mas de interromper a cadeia que o transforma em poluição invisível e persistente.</p>
+    <!-- Imagem de Destaque (Banner) -->
+    <div class="hero-image">
+        <div class="hero-overlay">
+            <div class="hero-text">
+                <h1>Freando a poluição invisível</h1>
+                <p>Entenda o impacto dos microplásticos no meio ambiente</p>
+            </div>
+        </div>
     </div>
 
-    <footer>
+    <!-- Conteúdo do Site -->
+    <main class="main-content">
+        <div class="article-box">
+            
+            <div class="breadcrumb">
+                Home > Meio Ambiente > <strong>PlastFreio</strong>
+            </div>
+
+            <h2>O que são Microplásticos?</h2>
+            <p class="subtitle">Partículas menores que 5 milímetros que afetam ecossistemas e a saúde humana.</p>
+
+            <p>A <strong>PlastFreio</strong> é uma iniciativa dedicada a frear a formação e a dispersão de microplásticos no meio ambiente. Os microplásticos representam um dos maiores desafios ambientais da atualidade, pois estão onipresentes: no oceano, no solo, no ar e até no corpo humano.</p>
+
+            <div class="highlight-box">
+                <strong>Nossa Missão:</strong> Frear a poluição por microplásticos antes que ela se torne irreversível, promovendo informação de qualidade, educação ambiental e mudanças concretas de hábito.
+            </div>
+
+            <h3>De onde eles vêm?</h3>
+            <p>Uma vez dispersos no ambiente, é praticamente impossível removê-los. As principais fontes incluem o desgaste de pneus, a lavagem de roupas sintéticas (que liberam milhares de fibras), a fragmentação de plásticos expostos ao sol e as microesferas presentes em alguns produtos de higiene.</p>
+
+            <h3>Como agimos?</h3>
+            <p>Atuamos na <strong>prevenção na fonte</strong>. Desenvolvemos conteúdos educativos para escolas e empresas, traduzimos a ciência para linguagem acessível e conectamos pesquisadores e gestores públicos em busca de soluções práticas.</p>
+            <p>O nome resume nossa proposta: <strong>frear o plástico</strong> antes que ele se fragmente e se espalhe como poluição invisível e persistente.</p>
+
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer style="text-align: center; padding: 30px; color: #666; font-size: 0.9em; margin-top: 20px;">
         <p>&copy; 2026 PlastFreio. Todos os direitos reservados.</p>
     </footer>
 
