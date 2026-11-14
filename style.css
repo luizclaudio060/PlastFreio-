@@ -1,0 +1,215 @@
+:root {
+    --primary-green: #0f5132;
+    --secondary-green: #198754;
+    --accent-green: #d1e7dd;
+    --text-dark: #212529;
+    --text-muted: #6c757d;
+    --bg-light: #f8f9fa;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-green);
+}
+
+/* --- HEADER E MENU --- */
+.top-bar {
+    background: var(--white);
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--primary-green);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--secondary-green);
+}
+
+.nav-links a.active {
+    color: var(--secondary-green);
+    border-bottom: 2px solid var(--secondary-green);
+}
+
+/* --- HERO BANNER --- */
+.hero {
+    background: linear-gradient(rgba(15, 81, 50, 0.8), rgba(15, 81, 50, 0.8)), url('https://images.unsplash.com/photo-1618477388954-7852f32655ec?q=80&w=1200&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: var(--white);
+}
+
+.hero h1 {
+    color: var(--white);
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero p {
+    font-size: 1.2em;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+/* --- CONTAINER --- */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    min-height: 50vh;
+}
+
+/* --- CONTEÚDO DE ARTIGO --- */
+.article-content {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin-bottom: 40px;
+}
+
+.article-content h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.article-content h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+}
+
+.article-content p {
+    margin-bottom: 15px;
+    color: #444;
+    font-size: 1.05em;
+}
+
+.article-content ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.article-content li {
+    margin-bottom: 10px;
+}
+
+.highlight-box {
+    background-color: var(--accent-green);
+    padding: 25px;
+    border-left: 5px solid var(--primary-green);
+    border-radius: 0 8px 8px 0;
+    margin: 30px 0;
+}
+
+/* --- GRID DE CARDS --- */
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.tip-card {
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.tip-card:hover {
+    transform: translateY(-5px);
+}
+
+.tip-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tip-content {
+    padding: 25px;
+    flex-grow: 1;
+}
+
+.tip-content h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: var(--primary-green);
+}
+
+.tip-content p {
+    color: var(--text-muted);
+    font-size: 0.95em;
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: var(--primary-green);
+    color: var(--white);
+    padding: 40px 20px 20px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+footer p {
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+    .hero h1 { font-size: 2em; }
+    .article-content { padding: 20px; }
+}
