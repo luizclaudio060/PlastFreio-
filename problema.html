@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O Problema - PlastFreio</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,15 +16,15 @@
             <nav class="nav-links">
                 <a href="index.html">Início</a>
                 <a href="problema.html" class="active">O Problema</a>
-                <a href="dados.html">Dados e Pesquisas</a>
+                <a href="dados.html">Dados</a>
                 <a href="solucoes.html">Soluções</a>
                 <a href="glossario.html">Glossário</a>
+                <a href="contato.html">Contato</a>
             </nav>
         </div>
     </header>
 
-    <!-- CORREÇÃO: Aumentamos o padding para 140px embaixo e ajustamos a cor do filtro verde -->
-    <section class="hero" style="padding: 80px 20px 140px 20px; background: linear-gradient(rgba(100, 133, 46, 0.8), rgba(100, 133, 46, 0.8)), url('https://images.unsplash.com/photo-1621451537084-482c73073a0f?q=80&w=1200&auto=format&fit=crop'); background-position: center; background-size: cover;">
+    <section class="hero" style="background: linear-gradient(rgba(100, 133, 46, 0.8), rgba(100, 133, 46, 0.8)), url('https://images.unsplash.com/photo-1621451537084-482c73073a0f?q=80&w=1200&auto=format&fit=crop');">
         <h1>O Problema dos Microplásticos</h1>
         <p>Entenda a ciência por trás das partículas invisíveis que ameaçam o planeta.</p>
     </section>
@@ -33,9 +34,12 @@
             <h2>O que são exatamente?</h2>
             <p>Microplásticos são fragmentos de plástico com menos de 5 milímetros de diâmetro. Eles podem ser divididos em duas categorias principais:</p>
             <ul>
-                <li><strong>Primários:</strong> Fabricados intencionalmente para uso comercial (como as microesferas em esfoliantes e pastas de dente) ou como matéria-prima industrial (pellets).</li>
+                <li><strong>Primários:</strong> Fabricados intencionalmente para uso comercial (como as microesferas em esfoliantes) ou como matéria-prima industrial (pellets).</li>
                 <li><strong>Secundários:</strong> A grande maioria. Originam-se da quebra de plásticos maiores (garrafas, sacolas, pneus, roupas) devido à exposição ao sol, calor e desgaste físico.</li>
             </ul>
+
+            <!-- IMAGEM NO MEIO DO TEXTO -->
+            <img src="https://images.unsplash.com/photo-1605600659908-0ef719419d41?q=80&w=1000&auto=format&fit=crop" alt="Sacola plástica no fundo do mar" class="content-image">
 
             <h3>De onde eles vêm no nosso dia a dia?</h3>
             <p>Muitas vezes não percebemos, mas estamos rodeados por fontes de microplásticos:</p>
@@ -50,8 +54,15 @@
                 <p>Uma vez no meio ambiente, é <strong>impossível</strong> recolher esses microplásticos. Eles são ingeridos por peixes, acumulam-se no solo e já foram detectados no sangue humano, nos pulmões e até na placenta de gestantes.</p>
             </div>
 
-            <h3>O tamanho do desafio</h3>
-            <p>Estima-se que milhões de toneladas de microplásticos entram no meio ambiente todos os anos. Como não há tecnologia capaz de filtrar o oceano ou o solo em escala global, a nossa única saída real é a <strong>prevenção na fonte</strong>.</p>
+            <!-- FONTES / REFERÊNCIAS -->
+            <div class="references">
+                <h4>Fontes Consultadas:</h4>
+                <ul>
+                    <li><a href="https://www.unep.org/pt-br" target="_blank">UNEP (Programa das Nações Unidas para o Meio Ambiente)</a></li>
+                    <li><a href="https://www.who.int/" target="_blank">OMS - Organização Mundial da Saúde (Relatórios sobre microplásticos na água potável)</a></li>
+                    <li>Pesquisas publicadas na revista científica <em>Environment International</em> (2022).</li>
+                </ul>
+            </div>
             
             <div style="margin-top: 30px; text-align: center;">
                 <a href="solucoes.html" class="btn">Ver como podemos resolver &rarr;</a>
