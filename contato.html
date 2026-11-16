@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - PlastFreio</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="top-bar">
+        <div class="header-content">
+            <a href="index.html" class="logo">🌿 PlastFreio</a>
+            <nav class="nav-links">
+                <a href="index.html">Início</a>
+                <a href="problema.html">O Problema</a>
+                <a href="dados.html">Dados</a>
+                <a href="solucoes.html">Soluções</a>
+                <a href="glossario.html">Glossário</a>
+                <a href="contato.html" class="active">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" style="padding: 80px 20px 140px 20px; background: linear-gradient(rgba(100, 133, 46, 0.9), rgba(100, 133, 46, 0.9)), url('https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?q=80&w=1200&auto=format&fit=crop');">
+        <h1>Fale Conosco</h1>
+        <p>Tem dúvidas, sugestões ou quer se voluntariar? Envie uma mensagem!</p>
+    </section>
+
+    <main class="container">
+        <div class="article-content" style="max-width: 700px; margin: 0 auto;">
+            <h2>Envie uma mensagem</h2>
+            <p>Preencha o formulário abaixo e retornaremos o mais breve possível.</p>
+            
+            <!-- FORMULÁRIO -->
+            <!-- Para fazer funcionar, crie uma conta no formspree.io e troque o link do action -->
+            <form action="#" method="POST" style="margin-top: 30px;">
+                <div class="form-group">
+                    <label for="nome">Seu Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Seu E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Como podemos ajudar?" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn" style="width: 100%;">Enviar Mensagem</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p><strong>PlastFreio</strong> - Iniciativa dedicada à prevenção da poluição por microplásticos.</p>
+        <p>&copy; 2026 PlastFreio. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
