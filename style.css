@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
-    --primary-green: #128c3e;
+    --primary-green: #128c3e; /* Verde do botão SciDraw */
     --primary-hover: #0e6e30;
     --bg-color: #ffffff;
     --bg-light: #f9fafb;
@@ -120,7 +120,7 @@ h1, h2, h3, h4 { color: var(--text-dark); font-weight: 700; }
 
 .btn-ai:hover { background: var(--primary-hover); }
 
-/* CONTEÚDO GERAL */
+/* CONTEÚDO GERAL (DEMAIS PÁGINAS) */
 .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
 .article-content { background: white; padding: 40px; border-radius: 20px; border: 1px solid var(--border-color); box-shadow: 0 4px 20px rgba(0,0,0,0.03); margin-bottom: 30px; }
 .article-content h2 { margin-bottom: 20px; font-size: 2em; }
@@ -159,3 +159,17 @@ h1, h2, h3, h4 { color: var(--text-dark); font-weight: 700; }
 /* FOOTER */
 footer { background: var(--bg-light); border-top: 1px solid var(--border-color); color: var(--text-muted); padding: 40px 20px; text-align: center; margin-top: 60px; }
 footer strong { color: var(--text-dark); }
+body::after {
+    content: "";
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 150px; /* Largura da marca d'água */
+    height: 150px; /* Altura da marca d'água */
+    background-image: url('logo.png'); /* Nome da sua imagem no GitHub */
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.2; /* Transparência (0.1 a 0.5 é o ideal) */
+    pointer-events: none;
+    z-index: 9999;
+}
