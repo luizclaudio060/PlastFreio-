@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://luizclaudio060.github.io/PlastFreio-/sitemap.xml
