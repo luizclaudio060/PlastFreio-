@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comunidade e Chat - PlastFreio</title>
+    <title>Comunidade - PlastFreio</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -26,37 +26,43 @@
     </header>
 
     <section class="hero" style="background-image: linear-gradient(rgba(100, 133, 46, 0.85), rgba(100, 133, 46, 0.85)), url('https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=1200&auto=format&fit=crop');">
-        <h1>Nosso Mural da Comunidade</h1>
-        <p>Converse, tire dúvidas, compartilhe dicas ou deixe seu recado!</p>
+        <h1>Mural da Comunidade</h1>
+        <p>Converse, tire dúvidas e compartilhe experiências com outras pessoas.</p>
     </section>
 
     <main class="container">
-        <div class="article-content" style="max-width: 900px; margin: 0 auto;">
+        <div class="article-content" style="max-width: 800px; margin: 0 auto;">
             <h2>Participe da Conversa</h2>
-            <p style="margin-bottom: 30px;">Use o espaço abaixo para interagir com outras pessoas que também se preocupam com o futuro do planeta. Você pode fazer login com o Google ou Facebook para comentar.</p>
+            <p>Este é um espaço para trocarmos ideias sobre como reduzir o plástico no dia a dia.</p>
             
-            <!-- ÁREA DE COMENTÁRIOS DO DISQUS -->
-            <div id="disqus_thread"></div>
-            <script>
-                /**
-                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+            <!-- INÍCIO DO CHAT DE EXEMPLO -->
+            <div class="chat-container">
+                <div class="chat-message">
+                    <div class="chat-avatar">M</div>
+                    <div class="chat-text">
+                        <strong>Mariana S.</strong>
+                        <p>Alguém aqui já usou aqueles sacos de lavagem para roupas sintéticas? Vale a pena mesmo?</p>
+                    </div>
+                </div>
                 
-                // TROQUE 'plastfreio' PELO SHORTNAME QUE VOCÊ CRIOU NO SITE DO DISQUS!
-                var disqus_config = function () {
-                    this.page.url = window.location.href;  // Usa a URL atual
-                    this.page.identifier = 'comunidade-plastfreio'; // Um identificador único
-                };
+                <div class="chat-message" style="border-bottom: none;">
+                    <div class="chat-avatar" style="background: #7fa83d;">J</div>
+                    <div class="chat-text">
+                        <strong>João P.</strong>
+                        <p>Sim, Mariana! Eu comprei um e ajuda muito a reter as microfibras. Recomendo!</p>
+                    </div>
+                </div>
                 
-                (function() { // DON'T EDIT BELOW THIS LINE
-                var d = document, s = d.createElement('script');
-                s.src = 'https://plastfreio.disqus.com/embed.js'; // Lembre-se de trocar a palavra plastfreio aqui também
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-                })();
-            </script>
-            <noscript>Por favor, ative o JavaScript para ver os <a href="https://disqus.com/?ref_noscript">comentários do Disqus.</a></noscript>
-            <!-- FIM DA ÁREA DE COMENTÁRIOS -->
+                <div style="text-align: center; margin-top: 20px;">
+                    <a href="#" class="btn">Entrar no Chat (Em breve)</a>
+                </div>
+            </div>
+            <!-- FIM DO CHAT DE EXEMPLO -->
+
+            <div class="highlight-box" style="margin-top: 40px; text-align: center;">
+                <h3 style="margin-top: 0;">Quer um chat ao vivo no site?</h3>
+                <p>Você pode criar um grupo no <strong>Telegram</strong> ou um servidor no <strong>Discord</strong> e colar o código aqui na página para todo mundo conversar em tempo real!</p>
+            </div>
 
         </div>
     </main>
