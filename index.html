@@ -4,7 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PlastFreio - Inteligência Artificial e Microplásticos</title>
+    
+    <!-- TAGS DE SEO (Para o Google encontrar o site) -->
+    <meta name="description" content="Tire dúvidas sobre microplásticos com nossa Inteligência Artificial, acesse dados científicos e descubra como reduzir a poluição plástica no dia a dia.">
+    <meta name="keywords" content="microplásticos, poluição plástica, meio ambiente, inteligência artificial, sustentabilidade, PlastFreio">
+    <meta name="author" content="PlastFreio">
+
+    <!-- TAGS PARA COMPARTILHAMENTO EM REDES SOCIAIS (WhatsApp/Instagram) -->
+    <meta property="og:title" content="PlastFreio - Tire dúvidas sobre Microplásticos">
+    <meta property="og:description" content="Use nossa Inteligência Artificial para entender a crise dos microplásticos e como combatê-la.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1621451537084-482c73073a0f?q=80&w=1200&auto=format&fit=crop">
+    <meta property="og:url" content="https://luizclaudio060.github.io/PlastFreio-/">
+    
+    <!-- FAVICON (Ícone da aba) -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -23,20 +37,28 @@
         </div>
     </header>
 
+    <!-- ÁREA DA INTELIGÊNCIA ARTIFICIAL -->
     <section class="hero-ai">
         <div class="badge-new">✨ Novo • Assistente Virtual com IA</div>
+        
         <h1>Tire suas dúvidas sobre <br><span>Microplásticos</span></h1>
         <p>Digite uma pergunta e nossa Inteligência Artificial responderá com base nos conhecimentos científicos mais recentes.</p>
 
         <div class="ai-input-box">
             <textarea id="ia-input" placeholder="Ex: Como os microplásticos chegam ao meu sangue? O que posso fazer para evitar?"></textarea>
+            
             <div class="ai-input-footer">
-                <div class="ai-credits">🎁 Totalmente gratuito para a comunidade</div>
-                <button class="btn-ai" onclick="perguntarIA()">Perguntar à IA <span>↑</span></button>
+                <div class="ai-credits">
+                    🎁 Totalmente gratuito para a comunidade
+                </div>
+                <button class="btn-ai" onclick="perguntarIA()">
+                    Perguntar à IA <span>↑</span>
+                </button>
             </div>
         </div>
     </section>
 
+    <!-- EXPLORE O PORTAL -->
     <main class="container">
         <h2 style="text-align: center; margin-bottom: 20px;">Explore o Portal</h2>
         <div class="tips-grid">
@@ -75,6 +97,7 @@
         <p>&copy; 2026 PlastFreio. Todos os direitos reservados.</p>
     </footer>
 
+    <!-- SCRIPT QUE FAZ A IA FUNCIONAR -->
     <script>
         function perguntarIA() {
             const pergunta = document.getElementById('ia-input').value;
@@ -82,6 +105,7 @@
                 alert("Por favor, digite uma pergunta primeiro!");
                 return;
             }
+            // Abre o ChatGPT com a pergunta pré-formatada
             const prompt = "Você é um especialista em meio ambiente. Responda de forma clara e educada a seguinte dúvida sobre microplásticos: " + pergunta;
             const url = "https://chatgpt.com/?q=" + encodeURIComponent(prompt);
             window.open(url, '_blank');
