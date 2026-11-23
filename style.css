@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
-    --primary-green: #128c3e; /* Verde do botão SciDraw */
+    --primary-green: #128c3e;
     --primary-hover: #0e6e30;
     --bg-color: #ffffff;
     --bg-light: #f9fafb;
@@ -120,7 +120,7 @@ h1, h2, h3, h4 { color: var(--text-dark); font-weight: 700; }
 
 .btn-ai:hover { background: var(--primary-hover); }
 
-/* CONTEÚDO GERAL (DEMAIS PÁGINAS) */
+/* CONTEÚDO GERAL */
 .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
 .article-content { background: white; padding: 40px; border-radius: 20px; border: 1px solid var(--border-color); box-shadow: 0 4px 20px rgba(0,0,0,0.03); margin-bottom: 30px; }
 .article-content h2 { margin-bottom: 20px; font-size: 2em; }
